@@ -1,0 +1,421 @@
+body{
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:100%;
+  text-align:center;
+  background-color:#fff000;
+  background-image:url('../images/2.jpg'); 
+  background-size: 1550px 1200px }
+body,table {
+  font-size:11px;
+  line-height:150%;
+  font-family:Tahoma,sans-serif;
+  color: #fff; }
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 5px 0 5px 0; 
+  clear:both; }
+h1 {
+  font-size:30px; }
+h2 {
+  font-family:"Trebuchet MS",sans-serif;
+  font-size:30px; }
+h3 {
+  text-align: center;
+  font-size:24px; }
+h4 {
+  font-size:16px; }
+h5 {
+  font-size:14px; }
+h6 {
+  font-size:12px; }
+p {
+  margin: 0;
+  padding: 5px 0 5px 0; }
+div {
+  display:block;
+  margin: 0;
+  padding: 0; 
+  text-align:left; }
+table {
+  width: 100%;
+  clear:both;
+  border-collapse:collapse;
+  margin:4px;
+  text-align:left; }
+table textarea {
+  width: 650px;
+  height: 200px;}
+th {
+  font-weight:bold;
+  padding: 10px 20px; }
+td {
+  border: 1px solid #fff000;
+  padding: 10px 20px; }
+#show {
+  margin-left: 20px; }
+ul {
+  clear:both;
+  margin:0;
+  padding: 10px 10px 10px 40px; 
+  list-style-type:disc; }  
+.external {
+  background: #000000;
+  width:923px;
+  margin: auto; }
+.clear {
+  clear:both; }
+#slideshow img {
+  width:100%;
+  height:312px; }
+#slideshow {
+  position:relative;
+  height:200px;
+  z-index: 0; }
+#slideshow img {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:8; }
+#slideshow img.active {
+  z-index:10; }
+#slideshow img.last-active {
+  z-index:9; }
+#head,#main,#footer {
+  background: #000;
+  float:left;
+  clear:both;
+  width:923px; }
+#head {
+  position:relative;
+  height:312px; }
+#head h1 {
+  display:block;
+  position: relative;
+  bottom: 30px;
+  left:-30px;
+  padding: 35px 0 0 0;
+  margin:0;
+  width:200px;
+  line-height:100%;
+  text-align:center;
+  font-size:60px;
+  font-family:"Trebuchet MS",sans-serif;
+  font-weight:normal; 
+  background-position: 40px 0;
+  background-repeat: no-repeat;
+  z-index: 1; }
+#head h2 {
+  display:block;
+  position: absolute;
+  bottom:25px;
+  left:10px;
+  padding: 0;
+  margin:0;
+  width:200px;
+  line-height:100%;
+  text-align:center;
+  font-family:Georgia,sans;
+  font-style: italic;
+  font-size:18px; }
+#head h1 a,#head h2 a {
+  color:#ff9900;
+  text-decoration: none; }
+#head h1 a:hover,#head h2 a:hover {
+  color:#ff9900;
+  text-decoration: none; }
+#head ul {
+  display:block;
+  position:absolute;
+  margin: 0;
+  padding: 0; 
+  list-style:none; }
+#head ul li {
+  display: block;
+  float:left;
+  clear:none;
+  padding:10px 20px;
+  margin:0;
+  border-right:1px solid #ffff00; }
+#head ul li.last {
+  border: 0px; }
+#head ul li a {
+  color: #ffff00;
+  font-size:13px;
+  text-decoration: none;
+  font-weight:bold; }
+#head ul li a:hover {
+  text-decoration:underline; }
+#head ul#menu {
+  left:200px;
+  bottom:1px; }  
+#main .sidebar {
+  float:left;
+  clear:none;
+  padding: 10px 0;
+  width:200px; }
+#main .sidebar h2 {
+  display: block;
+  float: left;
+  clear:both;
+  width: 200px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  line-height:50px;
+  text-align: center;
+  font-size:18px;
+  color: #000;
+  background-color: #ffff00; }
+#main .sidebar ul {
+  display: block;
+  float: left;
+  clear:both;
+  margin:0;
+  padding: 10px;
+  list-style:none; }
+#main .sidebar ul li {
+  display: block;
+  float: left;
+  clear:both;
+  margin:0;
+  width:180px;
+  cursor: pointer;
+  background-position: 0 100%;
+  background-repeat:repeat-x;
+  background-image:url('../images/border_bkg.gif'); }
+#main .sidebar ul li:hover {
+  background-color: #ffff00; }
+#main .sidebar ul li a {
+  width: 100%;
+  display: block;
+  float: left;
+  clear:both;
+  padding: 10px 0 10px 30px;
+  text-decoration: none;
+  color:#fff;
+  background-position: 8px 16px;
+  background-repeat:no-repeat;
+  background-image:url('../images/kratka.jpg'); }
+#main .sidebar ul li:hover a {
+  color: #000; }
+#main #content {
+  float:left;
+  clear:none;
+  padding: 20px 0;
+  width:700px; }
+#main #content #pokaz{
+  float: right;
+  margin-right: 25px;}
+#main #content .hr,#main .sidebar .hr {
+  display: block;
+  position: relative;
+  float: left;
+  clear:both;
+  height: 20px;
+  background-position: 0 50%;
+  background-repeat:repeat-x;
+  background-image:url('../images/border_bkg.gif'); }
+#main #content .hr {
+  left: 20px;
+  width: 680px; }
+#main .sidebar .hr {
+  width: 200px; }
+#main #content p,#main #content h1,#main #content h2,#main #content h3,#main #content h4,#main #content h5,#main #content h6 {
+  padding: 5px 20px; } 
+#galery img{
+    width: 170px;
+    height: 170px;
+    cursor: pointer;
+}
+#footer {
+  width:100%;
+  margin: 0 0 0 0 ;
+  padding: 10px 0; 
+  background-color: #ffff00; 
+  text-align:center; }
+#footer p {
+  display: block;
+  float:none;
+  clear:both;
+  margin: 0 auto 0 auto; 
+  padding: 0; 
+  text-align:center;
+  color: #000;}
+#lightbox{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .8);
+    display: none;
+}
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 923px){
+    body {
+        margin: 0;
+        width: 100%;
+        background-size: auto 1300px; }
+    .external {
+        margin:auto;
+        width:768px; }
+    #head {
+        width: 768px; }
+    #head h1 img {
+        display: none; }
+    #slideshow {
+        width: 768px; }
+    #slideshow img {
+        height: 250px; }
+    #head ul#menu {
+        left: 220px; }
+    #main {
+        width:768px; } 
+    #main .sidebar {
+        float:left;
+        clear: none;
+        width:768px; }
+    #main .sidebar h2 {
+        width: 768px;
+        height: 50px; }
+    #main .sidebar ul {
+        width: 768px; }
+    #main .sidebar ul li {
+        float: left;
+        clear:none;
+        width:150px; }
+    #main #content {
+        margin-left: 20px;
+        width:738px; }
+    #main table {
+        margin-left: 10px;
+        width: 90%; }
+    #main table textarea {
+        width:650px; }
+    #main #content #pokaz{
+        margin-right: 110px;
+        margin-top: 10px; }
+    
+    @media screen and (max-width: 768px){
+        .external{
+            width: 640px; }
+        #head{
+            width: 640px; }
+        #slideshow{
+            width: 640px; }
+        #main #content .hr{
+            width: 540px; }
+        #head ul#menu {
+            left: 120px; }
+        #main #content img{
+            width: 500px; }
+        #main{
+            width: 640px; }
+        #main .sidebar{
+            width: 640px; }
+        #main .sidebar h2{
+            width: 640px; }
+        #main .sidebar ul{
+            width: 640px; }
+        #main .sidebar ul li{
+            width: 125px; }
+        #main #content{
+            width: 600px; }
+        #main table{
+            width: 80%;
+            margin: auto; }
+        #main table .wyglad{
+            display: none; }
+        #main table textarea{
+            width:450px; }
+        #main #content #galery img{
+            display: block;
+            width: 150px;
+            height: 100px; }
+    }
+    @media screen and (max-width: 640px){
+        .external{
+            font-size: 10px;
+            width: 480px; }
+        #head{
+            width: 480px; }
+        #head ul{
+            margin-left: -50px; }
+        #head ul li a{
+            font-size: 10px; }
+        #slideshow{
+            width: 480px; }
+        #main #content .hr{
+            width: 400px; }
+        #main #content img{
+            width: 400px; }
+        #main{
+            width: 480px; }
+        #main .sidebar{
+            width: 480px; }
+        #main .sidebar h2{
+            width: 480px; }
+        #main .sidebar ul{
+            width: 480px; }
+        #main .sidebar ul li{
+            width: 125px; }
+        #main #content{
+            width: 440px; }
+        #main table{
+            margin-left: 10px;
+            width: 85%; }
+        #main table textarea{
+            width:350px; }
+        #main #content #galery img{
+            display: block;
+            width: 100px;
+            height: 70px; }
+    }
+    @media screen and (max-width: 480px){
+        .external {
+            font-size: 10px;
+            width: 320px; }
+        #head {
+            width: 320px; }
+        #head ul {
+            margin-left: -130px; }
+        #head ul li a {
+            font-size: 10px; }
+        #slideshow {
+            width: 320px; }
+        #main #content {
+            width: 320px; }
+        #main #content .hr {
+            width: 300px; }
+        #main #content img {
+            width: 240px; }
+        #main{
+            width: 320px; }
+        #main .sidebar{
+            width: 320px; }
+        #main .sidebar h2{
+            width: 320px; }
+        #main .sidebar ul{
+            width: 320px; }
+        #main .sidebar ul li {
+            width: 125px; }
+        #main table{
+            margin-left: -20px;
+            width: 85%; }
+        #main table textarea{
+            width: 250px; }
+        #show{
+            margin-left: -10px; }
+        #main #content #galery img{
+            display: block;
+            width: 50px;
+            height: 30px; }
+    }
+}

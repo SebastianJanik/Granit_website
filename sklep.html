@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+      <title>Granit</title>
+      <meta charset="UTF-8" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+      <script src="js/funkcje.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="style/style.css" type="text/css" />
+    </head>
+<body>
+<div class="external">
+  <div id="head">
+      <div id="slideshow">
+        <img src="images/slider1.jpg" alt="image1" class="active" />
+        <img src="images/slider2.jpg" alt="image2" />
+        <img src="images/slider3.jpg" alt="image3" />
+        <img src="images/slider4.jpg" alt="image3" />
+        <img src="images/slider5.jpg" alt="image3" />
+      </div>
+    <h1><img src="images/logo1.png" alt="logo1" /></h1>
+    <ul id="menu">
+      <li><a href="./index.html">Aktualności</a></li>
+      <li><a href="./sklep.html">Sklep</a></li>
+      <li><a href="./galeria.html">Galeria</a></li>
+      <li><a href="./kontakt.html">Kontakt</a></li>
+    </ul>
+  </div>
+  <div id="main">
+    <div class="sidebar">
+      <h2>Informacje</h2>
+      <ul>
+        <li id="t_table"><a href="./tabela.html">Tabele</a></li>
+        <li id="team"><a>Kadra</a></li>
+        <li id="history"><a href="./historia.html">Historia</a></li>
+      </ul>
+    </div>
+    <div id="content">
+        <table>
+            <thead>
+                <tr>
+                    <td>Przedmiot</td>
+                    <td>Cena</td>
+                    <td>Rodzaj</td>
+                    <td class="wyglad">Wyglad</td></tr></thead>
+            <tbody>
+                <tr>
+                    <td>Zestaw Szalików GRANIT BYCHAWA</td>    
+                    <td>25 PLN</td>
+                    <td>Wzór :
+                        <select id="scarf">
+                            <option value="Styl 1">1</option>
+                            <option value="Styl 2">2</option>
+                       </select></td>
+                    <td class="wyglad"><a href="images/szalik.jpg" target="blank"><img src="images/szalik.jpg" alt="szalik" width="100" height="50"/></a></td>
+                    <td><button onclick="save(1)">Dodaj</button></td></tr>
+                <tr>
+                    <td>Koszulka GRANIT BYCHAWA</td>
+                    <td>35 PLN</td>
+                    <td>Rozmiar :
+                        <select id="shirt">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select></td>
+                    <td class="wyglad"><a href="images/koszulka.jpg" target="blank"><img src="images/koszulka.jpg" alt="koszulka" width="100" height="40" /></a></td>
+                    <td><button onclick="save(2)">Dodaj</button></td></tr>
+                <tr>
+                    <td>Podstawka GRANIT BYCHAWA</td>
+                    <td>5 PLN</td>
+                    <td>Srednica
+                        <select id="sup">
+                            <option value="4 CM">4 CM</option>
+                            <option value="6 CM">6 CM</option>
+                        </select></td>
+                    <td class="wyglad"><a href="images/podstawka.jpg" target="blank"><img src="images/podstawka.jpg" alt="podstawka" width="100" height="50"/></a></td>
+                    <td><button onclick="save(3)">Dodaj</button></td></tr>
+            </tbody>
+        </table>
+        <button id="show" onclick="show()">Pokaz Koszyk</button>
+        <button id="delete" onclick="f_clear()">Wyczysc Koszyk</button>
+        <button id="order" onclick="order()">Zamów</button>
+        <div id="items"></div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+    <p>Copyright &copy; 2020; Sebastian Janik </p>
+</div>
+</body>
+</html>
